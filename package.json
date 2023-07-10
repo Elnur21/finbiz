@@ -1,0 +1,14 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Front final project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "finbiz"
+  ],
+  "author": "Elnur Maharramov",
+  "license": "ISC"
+}
