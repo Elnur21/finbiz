@@ -4,11 +4,15 @@
   "description": "Front final project",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "sass":"sass --watch ./assets/sass/main.scss:./assets/css/main.css"
   },
   "keywords": [
     "finbiz"
   ],
   "author": "Elnur Maharramov",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.63.6"
+  }
 }
