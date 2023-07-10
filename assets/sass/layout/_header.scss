@@ -3,6 +3,7 @@ header {
   width: 100%;
   position: absolute;
   background-color: transparent;
+  z-index: 100;
   .top {
     display: flex;
     justify-content: space-between;
@@ -38,6 +39,9 @@ header {
     align-items: center;
     .red-btn{
         margin-right: $base * 4;
+        &:hover{
+          background-color: white;
+        }
     }
   }
 }
