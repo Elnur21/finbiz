@@ -1,0 +1,20 @@
+.red-btn{
+    padding: 17px 30px;
+    background-color: $red-400;
+    color: white;
+    font-weight: $w-boldest;
+    border-radius: 100px;
+    &:hover{
+        color: black;
+    }
+}
+.icon-btn-light{
+    padding: 17px 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+.icon-btn-red{
+    padding: 17px 20px;
+    border-radius: 50%;
+    background-color: $red-400;
+}

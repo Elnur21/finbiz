@@ -1,0 +1,28 @@
+.main-header {
+  ul {
+    display: flex;
+    gap: $base * 8;
+    color: $black-253;
+    font-weight: $w-bold;
+  }
+  li {
+    position: relative;
+    transition: 0.5s;
+    &:hover {
+      color: $red-600;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      top: 105%;
+      left: 0;
+      height: 2px;
+      transition: 0.5s;
+      background-color: $red-600;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+header {
+  font-family: $dm-sans;
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $grey-100;
+    padding-top: $base * 4;
+    padding-bottom: $base * 4;
+
+    p {
+      font-size: $text-md;
+      color: $grey-666;
+    }
+
+    a:first-of-type {
+      margin-right: $base * 7;
+    }
+
+    a {
+      font-weight: $w-bold;
+      color: $black-181;
+    }
+
+    i {
+      color: $red-400;
+      margin-right: $base * 3;
+    }
+  }
+  .main-header {
+    padding-top: $base * 9;
+    padding-bottom: $base * 9;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    .red-btn{
+        margin-right: $base * 4;
+    }
+  }
+}
