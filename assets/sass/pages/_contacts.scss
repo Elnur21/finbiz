@@ -1,0 +1,32 @@
+.directory {
+    padding-top: 12%;
+  position: relative;
+  .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        background: white;
+        padding: $base * 3.5 $base * 8;
+        border-radius: $base*20;
+    }
+  }
+  img{
+    width: 100%;
+    object-fit: none;
+  }
+  h2{
+    font-size: $text-4xl;
+    color: white;
+  }
+  a{
+    font-family: $dm-sans;
+    font-weight: $w-bolder;
+    color: $grey-666;
+  }
+}

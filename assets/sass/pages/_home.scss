@@ -379,3 +379,10 @@
     left: 4.5%;
   }
 }
+.business-progress-2{
+  @extend .business-progress;
+  margin-top: $base * 25;
+  .top{
+    align-items: end;
+  }
+}
