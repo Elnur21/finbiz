@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <!-- Font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -11,6 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/main.css" />
   </head>
   <body>
@@ -155,7 +162,7 @@
             </div>
             <div class="home-about-info">
               <div class="info">
-                <img src="/assets/images/andrew.png" alt="">
+                <img src="/assets/images/andrew.png" alt="" />
                 <div>
                   <h4>Adrew David</h4>
                   <p class="text-red">CEO & Founder</p>
@@ -163,10 +170,12 @@
               </div>
               <div class="divider"></div>
               <div class="info">
-                <img src="/assets/images/info-home-about.png" alt="">
+                <img src="/assets/images/info-home-about.png" alt="" />
                 <div class="call">
                   <h4 class="call-h">Call us anytime</h4>
-                  <p class="call-p"><a href="tel:+256 214582146">+256 214582146</a></p>
+                  <p class="call-p">
+                    <a href="tel:+256 214582146">+256 214582146</a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -176,6 +185,71 @@
           <img src="/assets/images/home-about.png" alt="" />
         </div>
       </section>
+      <section class="slide-show container">
+        <!-- Slide Show -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide position-relative">
+              <article>
+                <img src="/assets/images/genius.png" alt="" />
+                <p>4.88 out of 5 star from 1,645 reviews</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide position-relative">
+              <article>
+                <img src="/assets/images/genius.png" alt="" />
+                <p>4.88 out of 5 star from 1,645 reviews</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide position-relative">
+              <article>
+                <img src="/assets/images/genius.png" alt="" />
+                <p>4.88 out of 5 star from 1,645 reviews</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide position-relative">
+              <article>
+                <img src="/assets/images/genius.png" alt="" />
+                <p>4.88 out of 5 star from 1,645 reviews</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="swiper-button-next">a</div>
+          <div class="swiper-button-prev">b</div>
+        </div>
+      </section>
     </main>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="/assets/js/swiper.js"></script>
   </body>
 </html>
