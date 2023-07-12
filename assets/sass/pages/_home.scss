@@ -264,7 +264,7 @@
   margin-top: $base * 30;
   margin-bottom: $base * 30;
   position: relative;
-  .watch{
+  .watch {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -275,14 +275,14 @@
     left: 0;
     z-index: 10;
   }
-  .watch-btn{
+  .watch-btn {
     display: inline-block;
     // position: absolute;
     // top: 45%;
     font-size: $text-xl;
     padding: 40px 45px;
   }
-  h2{
+  h2 {
     font-size: $text-5xl;
     position: absolute;
     bottom: $base * 5;
@@ -312,5 +312,70 @@
       rgba(88, 0, 0, 0.3) 34%,
       rgba(255, 255, 255, 0) 59%
     );
+  }
+}
+.team {
+  @extend .work-process;
+  padding-top: 7.5%;
+  position: relative;
+  .black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  h2 {
+    color: white;
+  }
+  .body{
+    margin-top: $base * 13;
+  }
+  article {
+    overflow: hidden !important;
+    height: 371px;
+    width: max-content;
+    position: relative;
+    .icons {
+      position: absolute;
+      display: flex;
+      gap: $base * 4;
+      width: 100%;
+      justify-content: center;
+      top: $base * 6;
+      transform: translateY(-300%);
+      transition: 0.5s;
+    }
+    &:hover {
+      .icons {
+        transform: translateY(0%) !important;
+      }
+    }
+    a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      border-radius: 50%;
+      &:hover {
+        color: $red-400;
+      }
+    }
+  }
+  .content {
+    position: absolute;
+    background-color: $red-400;
+    color: white;
+    h3 {
+      font-size: $text-lg;
+    }
+    width: 333px;
+    height: 333px;
+    padding: 65px;
+    border-radius: 50%;
+    top: 57%;
+    left: 4.5%;
   }
 }
