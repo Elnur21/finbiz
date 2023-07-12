@@ -113,7 +113,7 @@
 }
 .home-about {
   @extend .business-progress;
-  p{
+  p {
     margin: 0 !important;
   }
   display: flex;
@@ -161,30 +161,30 @@
       font-size: $text-md;
       font-family: $red-hat-display;
     }
-    .text-red{
+    .text-red {
       color: $red-500;
       font-size: 14px;
     }
-    .call-h{
+    .call-h {
       color: $grey-666;
       font-weight: $w-bold;
     }
-    a{
+    a {
       font-weight: $w-boldest;
       font-size: $text-md;
       color: black;
     }
-    .divider{
+    .divider {
       height: 70px;
       width: $base * 0.1;
       background-color: $grey-100;
       margin-right: 50px;
     }
-    .home-about-info{
+    .home-about-info {
       display: flex;
       margin-top: $base * 13;
     }
-    .info{
+    .info {
       display: flex;
       width: 100%;
       align-items: center;
@@ -192,27 +192,71 @@
     }
   }
 }
-.slide-show{
+.slide-show {
+  transform: translateY(-50%);
   @extend .business-progress;
   margin-top: 0;
-  article{
+  article {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: $base * 5;
   }
-  p{
+  p {
     color: $grey-666;
   }
-  i{
+  i {
     color: $gold-519;
     font-size: 18px;
   }
   .swiper-button-prev {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+    i {
+      color: $grey-666;
+    }
   }
-  
+  .swiper-button-prev::after {
+    content: "";
+  }
   .swiper-button-next {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+    @extend .swiper-button-prev;
+  }
+}
+.work-process {
+  @extend .business-progress;
+  .text-red {
+    img {
+      margin-left: $base * 2;
+    }
+  }
+  .top {
+    align-items: center;
+    flex-direction: column;
+  }
+  .body{
+    margin-top: $base * 5;
+  }
+  .card {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    img {
+      transform: translateX(0%);
+      filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+      &:hover {
+        transform: translateX(0%);
+        animation: smallToBig 1s linear;
+      }
+    }
+    a {
+      margin-top: $base * 10;
+      &:hover {
+        color: $red-400;
+        background-color: $red-100;
+        transform: translateY(-10%);
+      }
+    }
   }
 }
