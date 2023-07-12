@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
 $base:4px;
 
 // font size
@@ -8,6 +11,8 @@ $text-lg:24px;
 $text-xl:28px;
 $text-2xl:32px;
 $text-3xl:48px;
+$text-4xl:60px;
+$text-5xl:120px;
 
 
 // font weight
@@ -18,3 +23,7 @@ $w-medium:400;
 $w-bold:500;
 $w-bolder:600;
 $w-boldest:700;
+
+// font family
+$dm-sans: 'DM Sans', sans-serif;
+$red-hat-display: 'Red Hat Display', sans-serif;
