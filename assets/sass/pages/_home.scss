@@ -390,23 +390,23 @@
     display: flex;
     gap: $base * 13;
   }
-  .body{
+  .body {
     margin-top: $base * 15;
     flex-wrap: wrap;
   }
-  article{
+  article {
     position: relative;
     overflow: hidden;
     border-radius: $base * 5;
-    img{
-      transition: .5s;
+    img {
+      transition: 0.5s;
     }
-    &:hover img{
+    &:hover img {
       filter: grayscale(1);
       transform: scale(1.1);
     }
-    &::before{
-      content:'';
+    &::before {
+      content: "";
       position: absolute;
       width: 400px;
       height: 400px;
@@ -417,16 +417,16 @@
       left: 100%;
       box-shadow: 0 25px 2px -2px rgb(184, 81, 81);
       z-index: 10;
-      transition: .5s;
+      transition: 0.5s;
     }
-    &:hover::before{
-      transform:rotateZ(60deg) translateX(40%) translateY(45%);
+    &:hover::before {
+      transform: rotateZ(60deg) translateX(40%) translateY(45%);
     }
-    &:hover .content::after{
-      transform:  translateX(50%) translateY(-50%);
+    &:hover .content::after {
+      transform: translateX(50%) translateY(-50%);
     }
   }
-  .content{
+  .content {
     position: absolute;
     width: 85%;
     background-color: white;
@@ -437,7 +437,7 @@
     padding: 10% 0;
     border-radius: $base * 5;
     overflow: hidden;
-    &::after{
+    &::after {
       content: "";
       position: absolute;
       width: 50px;
@@ -447,14 +447,50 @@
       top: 100%;
       right: 100%;
       box-shadow: 0px 0px 3px 10px #ee74745f;
-      transition: .5s;
+      transition: 0.5s;
     }
   }
-  h5{
+  h5 {
     font-size: $text-lg;
     margin-bottom: $base * 2;
-    &:hover{
+    &:hover {
       color: $red-400;
+    }
+  }
+}
+.talk {
+  @extend .business-progress;
+  position: relative;
+  h2 {
+    font-size: 40px !important;
+    color: white;
+  }
+  .top {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    .part-1 {
+      width: 60%;
+    }
+  }
+  .img {
+    width: 100%;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      opacity: 0.7;
+      background: #000;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    img {
+      width: 100%;
     }
   }
 }
