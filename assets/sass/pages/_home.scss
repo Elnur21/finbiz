@@ -328,7 +328,7 @@
   h2 {
     color: white;
   }
-  .body{
+  .body {
     margin-top: $base * 13;
   }
   article {
@@ -379,10 +379,82 @@
     left: 4.5%;
   }
 }
-.business-progress-2{
+.business-progress-2 {
   @extend .business-progress;
   margin-top: $base * 25;
-  .top{
+  .top {
     align-items: end;
+  }
+  .tabs {
+    font-weight: $w-bolder;
+    display: flex;
+    gap: $base * 13;
+  }
+  .body{
+    margin-top: $base * 15;
+    flex-wrap: wrap;
+  }
+  article{
+    position: relative;
+    overflow: hidden;
+    border-radius: $base * 5;
+    img{
+      transition: .5s;
+    }
+    &:hover img{
+      filter: grayscale(1);
+      transform: scale(1.1);
+    }
+    &::before{
+      content:'';
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: $red-400;
+      opacity: 0.8;
+      transform: rotateZ(60deg);
+      bottom: 100%;
+      left: 100%;
+      box-shadow: 0 25px 2px -2px rgb(184, 81, 81);
+      z-index: 10;
+      transition: .5s;
+    }
+    &:hover::before{
+      transform:rotateZ(60deg) translateX(40%) translateY(45%);
+    }
+    &:hover .content::after{
+      transform:  translateX(50%) translateY(-50%);
+    }
+  }
+  .content{
+    position: absolute;
+    width: 85%;
+    background-color: white;
+    bottom: 7.5%;
+    left: 7.5%;
+    text-align: center;
+    box-sizing: content-box;
+    padding: 10% 0;
+    border-radius: $base * 5;
+    overflow: hidden;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: $red-400;
+      border-radius: 50%;
+      top: 100%;
+      right: 100%;
+      box-shadow: 0px 0px 3px 10px #ee74745f;
+      transition: .5s;
+    }
+  }
+  h5{
+    font-size: $text-lg;
+    margin-bottom: $base * 2;
+    &:hover{
+      color: $red-400;
+    }
   }
 }

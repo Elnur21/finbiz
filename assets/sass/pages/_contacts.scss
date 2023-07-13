@@ -90,13 +90,13 @@
   }
 }
 .contact-form {
-  
   .container {
     padding-top: 8%;
-  padding-bottom: 8%;
+    padding-bottom: 8%;
     width: 85%;
     margin: 0 auto;
-    box-shadow: -10px 0 20px -5px rgba(244, 244, 244, 0.5), 10px 0 20px -5px rgba(244, 244, 244, 0.5);
+    box-shadow: -10px 0 20px -5px rgba(244, 244, 244, 0.5),
+      10px 0 20px -5px rgba(244, 244, 244, 0.5);
   }
   .top {
     text-align: center;
@@ -124,11 +124,7 @@
     }
   }
   form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: $base * 5;
-    margin-top: $base * 11;
+    @extend .form-contact;
   }
   input,
   textarea {
