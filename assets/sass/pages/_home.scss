@@ -393,6 +393,7 @@
   .body {
     margin-top: $base * 15;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   article {
     position: relative;
@@ -492,5 +493,64 @@
     img {
       width: 100%;
     }
+  }
+}
+.testimonials{
+  @extend .work-process;
+  .swiper{
+    padding-top: 130px;
+    overflow: hidden;
+    width: 85%;
+    margin: 0 auto;
+  }
+  article{
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid $grey-100;
+    position: relative;
+    overflow: visible !important;
+  }
+  p{
+    color: $grey-666;
+    line-height: 26px;
+  }
+  .header{
+    top: -25%;
+    position: absolute;
+    width: max-content;
+    box-sizing: content-box;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 10px 3px rgba(128, 128, 128, 0.178);
+  }
+  .body{
+    flex-direction: column;
+    gap: $base * 2;
+    h3{
+      font-size: $text-lg;
+    }
+    border-bottom:1px solid $grey-100;
+    padding-bottom: 5%;
+  }
+  .footer{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h5{
+      font-size:$text-md;
+    }
+    p{
+      margin-top: $base * 2;
+      font-size: 18px;
+    }
+  }
+  .right{
+    font-size: 18px;
+    background-color: white;
+    color: $gold-519;
+    padding: 10px 15px;
+    box-shadow: 0px 0px 2px rgb(182, 180, 180);
+    border-radius: 20px;
   }
 }
