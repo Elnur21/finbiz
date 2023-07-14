@@ -495,26 +495,26 @@
     }
   }
 }
-.testimonials{
+.testimonials {
   @extend .work-process;
-  .swiper{
+  .swiper {
     padding-top: 130px;
     overflow: hidden;
     width: 85%;
     margin: 0 auto;
   }
-  article{
+  article {
     padding: 20px;
     border-radius: 20px;
     border: 1px solid $grey-100;
     position: relative;
     overflow: visible !important;
   }
-  p{
+  p {
     color: $grey-666;
     line-height: 26px;
   }
-  .header{
+  .header {
     top: -25%;
     position: absolute;
     width: max-content;
@@ -523,34 +523,96 @@
     border-radius: 50%;
     box-shadow: inset 0px 0px 10px 3px rgba(128, 128, 128, 0.178);
   }
-  .body{
+  .body {
     flex-direction: column;
     gap: $base * 2;
-    h3{
+    h3 {
       font-size: $text-lg;
     }
-    border-bottom:1px solid $grey-100;
+    border-bottom: 1px solid $grey-100;
     padding-bottom: 5%;
   }
-  .footer{
+  .footer {
     padding-top: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    h5{
-      font-size:$text-md;
+    h5 {
+      font-size: $text-md;
     }
-    p{
+    p {
       margin-top: $base * 2;
       font-size: 18px;
     }
   }
-  .right{
+  .right {
     font-size: 18px;
     background-color: white;
     color: $gold-519;
     padding: 10px 15px;
     box-shadow: 0px 0px 2px rgb(182, 180, 180);
     border-radius: 20px;
+  }
+}
+.latest {
+  @extend .work-process;
+  .body{
+    justify-content: space-between;
+  }
+  article{
+    width: 32%;
+    border-radius: 10px;
+    padding: 30px;
+    padding-right: 0;
+    background: linear-gradient(
+      0deg,
+      rgba(248, 248, 248, 1) 40%,
+      rgba(254, 254, 254, 1) 70%,
+      rgba(255, 255, 255, 1) 52%
+    );
+  }
+  .card-head {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    overflow: hidden;
+    div {
+      position: absolute;
+      color: white;
+      background: $red-400;
+      font-weight: $w-bold;
+      padding: 8px 17px;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  a:hover {
+    color: $red-400;
+  }
+  h3 {
+    font-size: $text-lg;
+  }
+  .icon-btn-red {
+    padding: 10px 13px;
+    margin-right: 7px;
+  }
+  .read-more {
+    font-weight: $w-bolder;
+  }
+  p {
+    color: $red-400;
+    font-size: $text-sm;
+    .byUser {
+      color: $grey-666;
+      font-size: 16px;
+    }
+  }
+  .card-body{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 }
