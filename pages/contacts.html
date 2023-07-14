@@ -1,11 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container top">
+        <div>
+          <p>Are you ready to grow up your business?</p>
+        </div>
+        <div>
+          <a href="mailto:elnur2370@gmail.com"
+            ><i class="fa-solid fa-envelope"></i> info@example.com</a
+          >
+          <a href="tel:0508534591"
+            ><i class="fa-solid fa-phone"></i> Hoteline: +210-9856988</a
+          >
+        </div>
+      </div>
+      <div class="container main-header">
+        <!-- Navigation -->
+        <div class="logo">
+          <img src="/assets/images/logo-1.svg" alt="" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="btns-header">
+          <a href="#" class="red-btn">Get Quote</a>
+          <a href="#" class="icon-btn-light"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <section class="directory">
+      <div>
+        <img src="/assets/images/bg-contact-blog.jpg" alt="" />
+      </div>
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div>
+          <a href="index.html">Home</a> <span class="text-red">/</span>
+          <a href="contacts.html">Contact us</a>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section class="contacts">
+        <div class="container">
+          <article>
+            <div class="top">
+              <img src="/assets/images/contact1.png" alt="contacts" />
+            </div>
+            <div class="body">
+              <div class="contact-icon">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+              <div class="main-info">
+                <p class="">Call Us 24/7</p>
+                <h5><a href="tel:+584 (25) 21453">+584 (25) 21453</a></h5>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="top">
+              <img src="/assets/images/contact1.png" alt="contacts" />
+            </div>
+            <div class="body">
+              <div class="contact-icon">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+              <div class="main-info">
+                <p class="">Call Us 24/7</p>
+                <h5><a href="tel:+584 (25) 21453">+584 (25) 21453</a></h5>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="top">
+              <img src="/assets/images/contact1.png" alt="contacts" />
+            </div>
+            <div class="body">
+              <div class="contact-icon">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+              <div class="main-info">
+                <p class="">Call Us 24/7</p>
+                <h5><a href="tel:+584 (25) 21453">+584 (25) 21453</a></h5>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="map">
+        <img class="location" src="/assets/images/location-icon.svg" alt="" />
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              class="gmap_iframe"
+              width="100%"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=753&amp;height=400&amp;hl=en&amp;q=Baku, Khirdalan&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ></iframe
+            ><a href="https://connectionsgame.org/">Connections Game</a>
+          </div>
+        </div>
+      </section>
+      <section class="contact-form">
+        <div class="container">
+          <div class="top">
+            <p class="">Get in touch</p>
+            <h2>Needs Help? Let’s Get in Touch</h2>
+          </div>
+          <div class="body">
+            <form action="#">
+              <input type="text" id="name" placeholder="Your Name">
+              <input type="email" id="email" placeholder="Your Email">
+              <input type="text" id="subject" placeholder="Your Subject">
+              <textarea name="text" id="text" rows="5" placeholder="Type Your Message"></textarea>
+              <div class="form-button">
+                <button type="submit" class="">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

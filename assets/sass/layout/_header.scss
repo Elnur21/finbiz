@@ -12,7 +12,7 @@ header {
     padding-bottom: $base * 4;
 
     p {
-      font-size: $text-md;
+      font-size: $text-sm + $base;
       color: $grey-666;
     }
 

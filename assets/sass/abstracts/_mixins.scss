@@ -21,3 +21,9 @@
     }
   }
 }
+
+@mixin paragraph($mt) {
+  color: $grey-666;
+  margin-top: $mt;
+  line-height: $base * 6 + 2px;
+}

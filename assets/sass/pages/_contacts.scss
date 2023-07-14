@@ -1,0 +1,164 @@
+.directory {
+  transform: translateY(18%);
+  position: relative;
+  .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      background: white;
+      padding: $base * 3.5 $base * 8;
+      border-radius: $base * 20;
+    }
+  }
+  img {
+    width: 100%;
+    object-fit: none;
+    height: 560px;
+  }
+  h2 {
+    font-size: $text-4xl;
+    color: white;
+  }
+  a {
+    font-family: $dm-sans;
+    font-weight: $w-bolder;
+    color: $grey-666;
+  }
+}
+.contacts {
+  margin-top: 10%;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  article {
+    .top {
+      display: flex;
+    }
+    .body {
+      display: flex;
+      gap: 10px;
+      background-color: $red-100;
+      padding: 40px 0 40px 40px;
+    }
+    a {
+      font-size: $text-lg;
+    }
+    p {
+      font-family: $dm-sans;
+      font-weight: $w-bold;
+      color: $red-600;
+    }
+    .contact-icon {
+      color: $red-600;
+      i {
+        font-size: 50px;
+      }
+    }
+  }
+}
+.map {
+  margin-top: 8%;
+  position: relative;
+  .location {
+    z-index: 100;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: calc(50% - 50px);
+    top: 50%;
+  }
+  .mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 600px;
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 600px;
+  }
+  .gmap_iframe {
+    height: 600px !important;
+  }
+}
+.contact-form {
+  .container {
+    padding-top: 8%;
+    padding-bottom: 8%;
+    width: 85%;
+    margin: 0 auto;
+    box-shadow: -10px 0 20px -5px rgba(244, 244, 244, 0.5),
+      10px 0 20px -5px rgba(244, 244, 244, 0.5);
+  }
+  .top {
+    text-align: center;
+    p {
+      text-transform: uppercase;
+      font-family: $red-hat-display;
+      font-weight: $w-bolder;
+      color: $red-500;
+    }
+    h2 {
+      font-size: $text-3xl;
+    }
+    position: relative;
+    &::after {
+      position: absolute;
+      bottom: -20%;
+      left: 0;
+      width: 100%;
+      content: "Contact Us";
+      font-family: $outline;
+      font-size: 150px;
+      color: $grey-100;
+      z-index: -1;
+      transform: scaleX(1.3);
+    }
+  }
+  form {
+    @extend .form-contact;
+  }
+  input,
+  textarea {
+    @extend .form-input;
+  }
+  #name,
+  #email {
+    width: 49%;
+  }
+  #subject,
+  #text {
+    width: 100%;
+  }
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border: 1px solid $red-600;
+  }
+  .form-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    button {
+      @extend .red-btn;
+      border-radius: 14px;
+      font-family: $dm-sans;
+      font-size: 16px;
+      background-color: $red-600;
+      border: none;
+      color: white;
+      &:hover {
+        background-color: $red-100;
+        color: black;
+      }
+    }
+  }
+}
