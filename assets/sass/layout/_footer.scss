@@ -1,0 +1,144 @@
+footer {
+  color: white;
+  background: #0e1422;
+  padding-top: 120px;
+  padding-bottom: 20px;
+  .container {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.153);
+  }
+  .top {
+    display: flex;
+    padding: 0 100px;
+    height: 170px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(/assets/images/bg-footer.png);
+    background-repeat: no-repeat;
+    background-color: #df0a0a;
+    background-blend-mode: multiply;
+    overflow: hidden;
+    border-radius: 100px;
+    background-position: center;
+    object-fit: contain;
+    background-size: cover;
+    p {
+      font-family: $red-hat-display;
+    }
+    h3 {
+      font-size: $text-2xl + $base;
+    }
+    .left {
+      width: 100%;
+    }
+    .right {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    input {
+      padding: 17px 170px 17px 25px;
+      // font-family: $red-hat-display;
+      font-size: 16px;
+      width: 100%;
+      border-radius: 100px;
+      border: none;
+    }
+    button {
+      position: absolute;
+      right: 0;
+      border: none;
+      font-size: 16px;
+    }
+  }
+  .body {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .lines {
+    margin: 20px 0 30px 0;
+  }
+  .left,
+  .right {
+    width: 30%;
+  }
+  .center{
+    width: 28%;
+  }
+  nav {
+    i {
+      margin-right: 15px;
+      transition: 0.5s;
+    }
+    ul {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    li {
+      width: 50%;
+      color: $grey-666;
+      font-family: $dm-sans;
+      font-weight: $w-bold;
+      margin-bottom: 10px;
+      transition: 0.5s;
+      &:hover i {
+        color: white;
+      }
+      &:hover {
+        color: $red-400;
+      }
+      &:hover span::after {
+        width: 100%;
+      }
+    }
+    span {
+      position: relative;
+      &::after {
+        width: 0%;
+        height: 1px;
+        background-color: $red-400;
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 0;
+        transition: 0.5s;
+      }
+    }
+  }
+  .center {
+    padding: 40px;
+    padding-top: 0;
+    border-radius: 15px;
+    background: linear-gradient(
+      0deg,
+      rgba(248, 248, 248, 0.2) 0%,
+      rgba(254, 254, 254, 0.1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    ul,
+    a {
+      font-family: $dm-sans;
+    }
+    li {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      font-size: 18px;
+      font-weight: $w-bold;
+    }
+    a {
+      display: inline-block;
+      margin-top: $base * 6;
+    }
+  }
+  .copyright{
+    font-family: $dm-sans;
+    padding: 40px 0 20px;
+    text-align: center;
+  }
+}
