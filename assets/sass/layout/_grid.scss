@@ -1,4 +1,10 @@
 .container{
     width: 100%;
     padding: 0 7.5%;
+    @include media(sm){
+        padding: 0 3%;
+    }
+    @include media(sm){
+        padding: 0 1%;
+    }
 }

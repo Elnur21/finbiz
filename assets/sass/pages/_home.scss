@@ -48,6 +48,66 @@
     height: 100%;
     z-index: -1;
   }
+  @include media(md) {
+    height: 800px;
+    background-size: cover;
+    h1 {
+      font-size: 51px;
+      .part-2 {
+        font-size: 73px;
+      }
+    }
+    p {
+      padding-left: $base * 18;
+    }
+    &::before {
+      display: none;
+    }
+  }
+  @include media(sm) {
+    height: 700px;
+    h1 {
+      line-height: 60px;
+      font-size: 40px;
+      .part-2 {
+        font-size: 62px;
+      }
+    }
+    p {
+      padding-left: 0;
+    }
+    &::before {
+      display: none;
+    }
+    img {
+      position: absolute;
+      left: -20%;
+      top: 75%;
+      animation: up-down 4s linear infinite;
+    }
+  }
+  @include media(xs) {
+    height: 700px;
+    h1 {
+      font-size: 36px;
+      line-height: 30px;
+      .part-2 {
+        font-size: 36px;
+      }
+    }
+    p {
+      padding-left: 0;
+    }
+    &::before {
+      display: none;
+    }
+    img {
+      position: absolute;
+      left: -20%;
+      top: 75%;
+      animation: up-down 4s linear infinite;
+    }
+  }
 }
 
 .business-progress {
@@ -556,10 +616,10 @@
 }
 .latest {
   @extend .work-process;
-  .body{
+  .body {
     justify-content: space-between;
   }
-  article{
+  article {
     width: 32%;
     border-radius: 10px;
     padding: 30px;
@@ -609,7 +669,7 @@
       font-size: 16px;
     }
   }
-  .card-body{
+  .card-body {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
