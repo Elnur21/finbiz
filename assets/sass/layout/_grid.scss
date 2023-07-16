@@ -1,10 +1,15 @@
-.container{
-    width: 100%;
-    padding: 0 7.5%;
-    @include media(sm){
-        padding: 0 3%;
-    }
-    @include media(xs){
-        padding: 0 1%;
-    }
+.container {
+  width: 100%;
+  padding: 0 7.5%;
+  @include media(sm) {
+    padding: 0 3%;
+  }
+  @include media(xs) {
+    padding: 0 1%;
+  }
+}
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

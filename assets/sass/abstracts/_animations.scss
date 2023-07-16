@@ -17,6 +17,14 @@
     transform: rotateZ(360deg);
   }
 }
+@keyframes rotate-reverse-360 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
 
 @keyframes smallToBig {
   0% {
