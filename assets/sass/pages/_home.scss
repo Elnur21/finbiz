@@ -606,6 +606,29 @@
       color: $red-400;
     }
   }
+  @include media(xll){
+    .body{
+      justify-content: space-between;
+    }
+    article{
+      width: 30%;
+    }
+  }
+  @include media(md){
+    article{
+      margin-top: 30px;
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  @include media(xs){
+    .top{
+      flex-wrap: wrap;
+      align-items: start;
+    }
+  }
 }
 .talk {
   @extend .business-progress;
@@ -640,6 +663,30 @@
     }
     img {
       width: 100%;
+    }
+  }
+  @include media(lg){
+    h2 {
+      font-size: 30px !important;
+    }
+  }
+  @include media(md){
+    .img{
+      height: 300px;
+      img{
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  @include media(sm){
+    text-align: center;
+    .top{
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    h2 {
+      font-size: 24px !important;
     }
   }
 }
