@@ -281,6 +281,27 @@
       gap: $base * 4;
     }
   }
+  @include media(md){
+    flex-wrap: wrap;
+    &-img {
+      width: 100%;
+      img {
+        transform: scale(1.1) translateY(0%) translateX(0%);
+        width: 100%;
+      }
+    }
+  }
+  @include media(sm){
+    .checklist{
+      flex-direction: column;
+      p{
+        width: 100% !important;
+      }
+    }
+    .home-about-info{
+      flex-direction: column;
+    }
+  }
 }
 .slide-show {
   transform: translateY(-50%);
@@ -309,6 +330,9 @@
   }
   .swiper-button-next {
     @extend .swiper-button-prev;
+  }
+  @include media(xlg){
+    margin-top: 140px;
   }
 }
 .work-process {
