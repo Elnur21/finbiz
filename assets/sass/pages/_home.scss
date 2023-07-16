@@ -520,6 +520,12 @@
     top: 57%;
     left: 4.5%;
   }
+  @include media(xmd){
+    .body{
+      justify-content: center;
+      gap: 60px
+    }
+  }
 }
 .business-progress-2 {
   @extend .business-progress;
