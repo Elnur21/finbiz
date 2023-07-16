@@ -427,6 +427,34 @@
       rgba(255, 255, 255, 0) 59%
     );
   }
+  @include media(lg){
+    h2{
+      font-size: 80px
+    }
+  }
+  @include media(md){
+    .watch-btn {
+      padding: 30px 35px;
+    }
+    h2{
+      font-size: 60px
+    }
+  }
+  @include media(sm){
+    h2{
+      font-size: 36px;
+      width: 95%;
+    }
+  }
+  @include media(xs){
+    .watch-btn {
+      font-size: 16px;
+      padding: 15px 20px;
+    }
+    h2{
+      font-size: 26px
+    }
+  }
 }
 .team {
   @extend .work-process;
