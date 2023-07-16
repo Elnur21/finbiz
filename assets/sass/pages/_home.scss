@@ -170,6 +170,36 @@
       @include paragraph($base * 5);
     }
   }
+  @include media(lg){
+    .body{
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: $base;
+    }
+    .card{
+      width: 48%;
+    }
+  }
+  @include media(md){
+    .top{
+      h2{
+        font-size: 24px
+      }
+    }
+  }
+  @include media(sm){
+    .card{
+      width: 100%;
+    }
+  }
+  @include media(xs){
+    .top{
+      flex-direction: column;
+      gap: 30px;
+      align-items: start;
+      margin-bottom: 30px;
+    }
+  }
 }
 .home-about {
   @extend .business-progress;
