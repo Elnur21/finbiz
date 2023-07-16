@@ -19,7 +19,11 @@
     @media only screen and (max-width: 1300px) {
       @content;
     }
-  } @else if $breakpoint == xl {
+  }  @else if $breakpoint == xl {
+    @media only screen and (max-width: 1400px) {
+      @content;
+    }
+  } @else if $breakpoint == xll {
     @media only screen and (min-width: 1200px) {
       @content;
     }

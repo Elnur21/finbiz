@@ -10,25 +10,21 @@ function showScrollToTopButton() {
     scrollToTopBtn.style.display = "none";
   }
 }
-document
-  .getElementById("scroll")
-  .addEventListener("click", function () {
-    scrollToTop();
-  });
-function scrollToTop() {
+document.getElementById("scroll").addEventListener("click", function () {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
-}
+});
 function updateScrollProgress() {
   var scrollProgress = document.getElementById("scroll");
-  var scrollTop =
-    document.documentElement.scrollTop || document.body.scrollTop;
+  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
   var scrollHeight =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
   var scrolled = scrollTop / scrollHeight;
-  console.log(scrolled)
-  scrollProgress.style.background = `conic-gradient(red ${scrolled*100}%,white ${scrolled*100}%)`
+  console.log(scrolled);
+  scrollProgress.style.background = `conic-gradient(red ${
+    scrolled * 100
+  }%,white ${scrolled * 100}%)`;
 }
