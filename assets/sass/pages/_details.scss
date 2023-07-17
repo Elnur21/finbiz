@@ -1,0 +1,15 @@
+.details{
+    gap: 50px;
+    .main-img{
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        width: 100%;
+    }
+    .left{
+        border-radius: 16px;
+        border: 1px solid $grey-100;
+    }
+    .imgs{
+        display: flex;
+    }
+}

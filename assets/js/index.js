@@ -23,7 +23,6 @@ function updateScrollProgress() {
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
   let scrolled = scrollTop / scrollHeight;
-  console.log(scrolled);
   scrollProgress.style.background = `conic-gradient(red ${
     scrolled * 100
   }%,white ${scrolled * 100}%)`;

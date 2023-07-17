@@ -242,7 +242,7 @@
       margin-top: $base * 10;
       border-left: $base * 1.5 solid $red-400;
       p {
-        width: 44%;
+        width: 48%;
         margin: $base 0 !important;
       }
     }
@@ -845,6 +845,8 @@
     width: fit-content;
     display: flex;
     overflow: hidden;
+    border-radius: 16px;
+    cursor: pointer;
     div {
       position: absolute;
       color: white;
@@ -858,6 +860,10 @@
     }
     img {
       width: 100%;
+      transition: .5s;
+      &:hover{
+        transform: scale(1.1);
+      }
     }
   }
   a:hover {
