@@ -3,7 +3,7 @@ window.addEventListener("scroll", function () {
   updateScrollProgress();
 });
 function showScrollToTopButton() {
-  var scrollToTopBtn = document.getElementById("scroll");
+  let scrollToTopBtn = document.getElementById("scroll");
   if (window.scrollY > 20) {
     scrollToTopBtn.style.display = "flex";
   } else {
@@ -17,14 +17,30 @@ document.getElementById("scroll").addEventListener("click", function () {
   });
 });
 function updateScrollProgress() {
-  var scrollProgress = document.getElementById("scroll");
-  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  var scrollHeight =
+  let scrollProgress = document.getElementById("scroll");
+  let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  let scrollHeight =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
-  var scrolled = scrollTop / scrollHeight;
+  let scrolled = scrollTop / scrollHeight;
   console.log(scrolled);
   scrollProgress.style.background = `conic-gradient(red ${
     scrolled * 100
   }%,white ${scrolled * 100}%)`;
+}
+
+
+let hamburger = document.querySelector(".btns-header .icon-btn-light");
+let sidebar = document.querySelector(".sidebar");
+let left_sidebar = document.querySelector(".left-sidebar");
+let close_btn = document.querySelector(".close")
+hamburger.addEventListener("click",()=>{
+  sidebar.style.transform = "translateX(0%)";
+  left_sidebar.style.display="block"
+})
+left_sidebar.addEventListener("click",close)
+close_btn.addEventListener("click",close)
+function close() {
+  sidebar.style.transform = "translateX(100%)";
+  left_sidebar.style.display="none";
 }
