@@ -61,6 +61,30 @@
       }
     }
   }
+  @include media(xl) {
+    .container {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    article{
+      width: 30%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  @include media(lg) {
+    article {
+      a {
+        font-size: 18px !important;
+      }
+    }
+  }
+  @include media(md) {
+    article {
+      width: 100%;
+    }
+  }
 }
 .map {
   margin-top: 8%;
@@ -158,6 +182,41 @@
       &:hover {
         background-color: $red-100;
         color: black;
+      }
+    }
+  }
+  @include media(md){
+    .top {
+      h2{
+        font-size: 36px;
+      }
+      &::after {
+        font-size: 120px;
+        bottom: 10px;
+      }
+    }
+  }
+  @include media(sm){
+    .top {
+      h2{
+        font-size: 30px;
+      }
+      &::after {
+        font-size: 70px;
+      }
+    }
+  }
+  @include media(xs){
+    #name, #email{
+      width: 100%;
+    }
+    .top {
+      h2{
+        font-size: 26px;
+      }
+      &::after {
+        font-size: 50px;
+        bottom: 40px;
       }
     }
   }

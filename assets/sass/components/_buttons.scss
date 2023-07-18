@@ -9,6 +9,18 @@
         color: black;
     }
 }
+.light-btn{
+    padding: 17px 30px;
+    background-color: white;
+    color: $red-500;
+    font-weight: $w-boldest;
+    border-radius: 100px;
+    transition: .5s;
+    &:hover{
+        color: white;
+        background-color: $red-500;
+    }
+}
 .icon-btn-light{
     padding: 17px 20px;
     border-radius: 50%;
