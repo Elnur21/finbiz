@@ -57,10 +57,36 @@ let left = document.querySelector("#left");
 document.addEventListener("DOMContentLoaded", () => {
   left.style.transform = "translateX(-100%)";
   right.style.transform = "translateX(100%)";
-  setTimeout(()=>{
-    document.querySelector(".circle").style.display="none"
-  },500)
-  setTimeout(()=>{
-    document.querySelector(".loading").style.display="none"
-  },1250)
+  setTimeout(() => {
+    document.querySelector(".circle").style.display = "none";
+  }, 500);
+  setTimeout(() => {
+    document.querySelector(".loading").style.display = "none";
+  }, 1250);
 });
+
+let tabMenus = document.querySelectorAll(".tabs a");
+let contents = document.getElementsByClassName("tab-content");
+for (let tabMenu of tabMenus) {
+  tabMenu.addEventListener("click", function () {
+    changeActive(this);
+    let dataId = this.getAttribute("data-id");
+    for (let content of contents) {
+      content.classList.remove("active");
+      content.style.display="none";
+    }
+    for (let content of contents) {
+      if (content.getAttribute("data-content") == dataId) {
+        content.classList.add("active");
+      } else if (dataId == "All") {
+        content.classList.add("active");
+      }
+    }
+  });
+}
+function changeActive(list) {
+  for (let x of tabMenus) {
+    x.classList.remove("active");
+  }
+  list.classList.add("active");
+}

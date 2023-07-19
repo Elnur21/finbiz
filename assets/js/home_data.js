@@ -30,7 +30,7 @@ fetch("http://localhost:3000/together")
     let text = "";
     data.forEach((t) => {
       text += `
-      <article>
+      <article class="tab-content" data-content=${t.type}>
       <a href="index.html">
         <img src="/assets/images/${t.img}" alt="" />
         <div class="content">
@@ -41,7 +41,6 @@ fetch("http://localhost:3000/together")
     </article>
         `;
     });
-    console.log(text)
     together.innerHTML += text;
   });
 
@@ -74,6 +73,5 @@ fetch("http://localhost:3000/together")
           </article>
           `;
       });
-      console.log(text)
       latest.innerHTML += text;
     });
