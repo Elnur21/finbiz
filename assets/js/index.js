@@ -1,6 +1,18 @@
+let main_header = document.querySelector(".main-header");
+function scrollHeader() {
+  if (window.scrollY > 50) {
+    main_header.style.position = "fixed";
+    main_header.style.top = "0";
+    main_header.style.background = "white";
+  }else{
+    main_header.style.position = "static";
+    main_header.style.background = "transparent";
+  }
+}
 window.addEventListener("scroll", function () {
   showScrollToTopButton();
   updateScrollProgress();
+  scrollHeader();
 });
 function showScrollToTopButton() {
   let scrollToTopBtn = document.getElementById("scroll");
@@ -69,11 +81,11 @@ let tabMenus = document.querySelectorAll(".tabs a");
 let contents = document.getElementsByClassName("tab-content");
 for (let tabMenu of tabMenus) {
   tabMenu.addEventListener("click", function () {
-    changeActive(this,tabMenus);
+    changeActive(this, tabMenus);
     let dataId = this.getAttribute("data-id");
     for (let content of contents) {
       content.classList.remove("active");
-      content.style.display="none";
+      content.style.display = "none";
     }
     for (let content of contents) {
       if (content.getAttribute("data-content") == dataId) {
@@ -84,7 +96,7 @@ for (let tabMenu of tabMenus) {
     }
   });
 }
-function changeActive(list,tabMenus) {
+function changeActive(list, tabMenus) {
   for (let x of tabMenus) {
     x.classList.remove("active");
   }

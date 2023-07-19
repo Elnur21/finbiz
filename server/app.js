@@ -158,6 +158,23 @@ const blogs = [
   },
 ];
 
+
+blogs.forEach((blog) => {
+  const numComments = Math.floor(Math.random() * (11))
+  blog.comments = [];
+
+  for (let i = 0; i < numComments; i++) {
+    const comment = {
+      fullName: `User ${i + 1}`,
+      topic: `Topic ${i + 1}`,
+      description: `Random comment ${i + 1} for the blog`,
+    };
+
+    blog.comments.push(comment);
+  }
+});
+
+
 app.get("/team", (req, res) => {
   res.status(200).json(team);
 });

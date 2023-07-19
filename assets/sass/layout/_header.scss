@@ -31,14 +31,13 @@ header {
     }
   }
   .main-header {
-    // position: sticky;
-    // top: 5px;
     padding-top: $base * 9;
     padding-bottom: $base * 9;
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    transition: 0.5s;
     .red-btn {
       margin-right: $base * 4;
       &:hover {

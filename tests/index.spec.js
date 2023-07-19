@@ -1,4 +1,3 @@
-// Mock DOM elements
 document.body.innerHTML = `
   <button id="scroll">Scroll To Top</button>
   <div class="btns-header">
@@ -13,10 +12,9 @@ const {
   updateScrollProgress,
   close,
 } = require("../assets/js/index");
-// Mock function used in code
 const scrollToMock = jest.fn();
 
-// Mock querySelector and addEventListener methods
+
 document.querySelector = jest.fn((selector) => {
   switch (selector) {
     case "#scroll":
@@ -72,7 +70,7 @@ describe("index.js tests:", () => {
   });
 
   test("updateScrollProgress should update the scroll progress bar", () => {
-    // setTimeout(() => {
+    setTimeout(() => {
       updateScrollProgress();
 
       expect(scrollToMock).not.toHaveBeenCalled();
@@ -84,11 +82,10 @@ describe("index.js tests:", () => {
       expect(scrollProgress.style.background).toBe(
         `conic-gradient(red ${scrolled * 100}%, white ${scrolled * 100}%)`
       );
-    // }, 0);
+    }, 0);
   });
 
   test("clicking the scroll button should scroll to the top", () => {
-    // Mock scrollTo method
     window.scrollTo = jest.fn();
 
     document.getElementById("scroll").dispatchEvent(new Event("click"));

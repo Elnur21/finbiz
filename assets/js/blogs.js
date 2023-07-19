@@ -1,6 +1,6 @@
 import { default as changeActive } from "./index.js";
 
-let team = document.querySelector(".articles");
+let posts = document.querySelector(".articles");
 let paginations = document.querySelector(".paginations");
 
 fetch("http://localhost:3000/blogs?page=1")
@@ -36,7 +36,7 @@ function addPaginationListeners() {
         .then((res) => res.json())
         .then((data) => {
           const { slicedBlogs } = data;
-          team.innerHTML = "";
+          posts.innerHTML = "";
           getBlogs(slicedBlogs);
         });
     });
@@ -47,9 +47,9 @@ function getBlogs(slicedBlogs) {
   let text = "";
   slicedBlogs.forEach((blog) => {
     text += `
-      <article>
+      <article class="post-article">
         <div class="top">
-          <a href="#">
+          <a href="details.html#${blog.day}" class="post-article-img">
             <img src="/assets/images/${blog.img}" alt="blog" />
           </a>
           <div class="info">
@@ -63,13 +63,13 @@ function getBlogs(slicedBlogs) {
             ${blog.month}
           </div>
         </div>
-        <div class="body">
-          <a href="#">${blog.title}</a>
+        <div class="body" class="post-article-title">
+          <a href="details.html#${blog.day}">${blog.title}</a>
         </div>
       </article>
     `;
   });
-  team.innerHTML = text;
+  posts.innerHTML = text;
 }
 
 let searc_inp = document.querySelector(".search-inp");
