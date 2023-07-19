@@ -73,7 +73,7 @@ const latest = [
 
 const blogs = [
   {
-    title: "TBuilding smart business grow solution for you",
+    title: "Tbuilding smart business grow solution for you",
     name: "John",
     img: "blog1.jpg",
     day: 4,
@@ -168,7 +168,9 @@ app.get("/latest", (req, res) => {
   res.status(200).json(latest);
 });
 app.get("/blogs", (req, res) => {
-  res.status(200).json(blogs);
+  let page = req.query.page;
+  const slicedBlogs = blogs.slice((page-1)*4, page*4);
+  res.status(200).json({slicedBlogs,blogs});
 });
 
 app.listen(3000, () => {

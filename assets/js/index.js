@@ -69,7 +69,7 @@ let tabMenus = document.querySelectorAll(".tabs a");
 let contents = document.getElementsByClassName("tab-content");
 for (let tabMenu of tabMenus) {
   tabMenu.addEventListener("click", function () {
-    changeActive(this);
+    changeActive(this,tabMenus);
     let dataId = this.getAttribute("data-id");
     for (let content of contents) {
       content.classList.remove("active");
@@ -84,9 +84,10 @@ for (let tabMenu of tabMenus) {
     }
   });
 }
-function changeActive(list) {
+function changeActive(list,tabMenus) {
   for (let x of tabMenus) {
     x.classList.remove("active");
   }
   list.classList.add("active");
 }
+export default changeActive;

@@ -1,5 +1,9 @@
 .blogs {
   padding: 130px 0;
+  a.active {
+    background-color: $red-500;
+    color: white !important;
+  }
   .container {
     display: flex;
   }
@@ -9,7 +13,7 @@
     gap: 20px;
   }
   .left {
-    // width: 100%;
+    width: 400%;
     article {
       border: 1px solid $grey-100;
       width: max-content;
@@ -150,29 +154,29 @@
       height: 100%;
     }
   }
-  .category{
-    a{
+  .category {
+    a {
       font-family: $dm-sans;
       display: flex;
       border-radius: 8px;
       justify-content: space-between;
       color: $grey-footer;
       font-weight: $w-bold;
-      transition: .5s;
+      transition: 0.5s;
       margin-bottom: 15px;
-      &:hover{
+      &:hover {
         transform: scale(1.05);
         color: white;
       }
-      &:hover i{
+      &:hover i {
         color: white;
       }
     }
-    i{
+    i {
       color: $red-500;
     }
   }
-  .projects{
+  .projects {
     .articles {
       display: flex;
       flex-direction: column;
@@ -185,7 +189,7 @@
       .date {
         color: $grey-footer;
         margin-bottom: $base * 2;
-        i{
+        i {
           margin-right: $base;
         }
       }
@@ -210,8 +214,8 @@
       }
     }
   }
-  .posts{
-    .imgs{
+  .posts {
+    .imgs {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -232,83 +236,80 @@
       }
     }
   }
-  .tag-links{
+  .tag-links {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    a{
+    a {
       display: inline-block;
       font-family: $dm-sans;
       font-size: 14px;
       padding: 10px 15px;
       border-radius: 8px;
       color: $grey-footer;
-      &:hover{
+      &:hover {
         color: white;
         transform: scale(1.1);
       }
     }
   }
-  .contact{
+  .contact {
     @extend .search;
     background-color: $black-253 !important;
     text-align: center;
     padding-top: 80px !important;
     padding-bottom: 80px !important;
-    h2{
+    h2 {
       margin: 30px 0;
       color: white;
       font-size: 22px;
     }
-    a{
+    a {
       border-radius: $base * 4;
       background-color: $red-500;
       font-family: $dm-sans;
-      &:hover{
+      &:hover {
         background-color: $red-100;
       }
     }
   }
-  @include media(xl){
-    .left{
+  @include media(xl) {
+    .left {
       width: 50%;
     }
-    .right{
+    .right {
       width: 50% !important;
     }
   }
-  @include media(lg){
-    .container{
+  @include media(lg) {
+    .container {
       flex-wrap: wrap;
     }
-    .left{
+    .left {
       width: 100%;
-      .articles{
+      .articles {
         justify-content: space-between;
       }
     }
-    .right{
+    .right {
       width: 100% !important;
     }
-    
-    .paginations{
+
+    .paginations {
       margin-bottom: 20px;
     }
   }
-  @include media(md){
-    .articles,.top{
+  @include media(md) {
+    .articles,
+    .top {
       width: 100%;
-      article,img{
+      article,
+      img {
         width: 100%;
       }
-      .body{
+      .body {
         width: 100%;
       }
     }
   }
 }
-
-
-
-
-
