@@ -1,0 +1,65 @@
+.loading {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  @extend %center;
+  #left,
+  #right {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    transition-delay: .5s !important;
+    transition: .75s;
+  }
+  #left {
+    left: 0;
+  }
+  #right {
+    right: 0;
+  }
+  .circle {
+    div{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        background: white;
+        z-index: 10;
+        border-radius: 50%;
+    }
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: conic-gradient(rgb(247, 112, 112) 30%, white 30%);
+    position: relative;
+    animation: rotate-360 1.5s linear infinite;
+    &::after,
+    &::before {
+      content: "";
+      border-radius: 50%;
+      position: absolute;
+      box-shadow: 0px 0px 0px 5px white;
+    }
+    &::before {
+      background: conic-gradient(rgb(250, 71, 71) 30%, white 30%);
+      width: 135px;
+      height: 135px;
+      top: 12.5px;
+      left: 12.5px;
+      animation: rotate-360 1s linear infinite;
+    }
+    &::after {
+      background: conic-gradient(rgb(175, 21, 21) 30%, white 30%);
+      width: 110px;
+      height: 110px;
+      top: 25px;
+      left: 25px;
+      animation: rotate-360 .7s linear infinite;
+    }
+  }
+}
