@@ -242,7 +242,7 @@
       margin-top: $base * 10;
       border-left: $base * 1.5 solid $red-400;
       p {
-        width: 44%;
+        width: 48%;
         margin: $base 0 !important;
       }
     }
@@ -606,6 +606,12 @@
       color: $red-400;
     }
   }
+  a.active {
+    color: $red-400;
+  }
+  article.active {
+    display: block !important;
+  }
   @include media(xll) {
     .body {
       justify-content: space-between;
@@ -776,7 +782,7 @@
       color: black !important;
     }
   }
-  .home-about-info{
+  .home-about-info {
     gap: 30px;
   }
   .info {
@@ -803,13 +809,13 @@
     }
   }
   overflow-x: clip;
-  .spinner{
+  .spinner {
     position: absolute;
     right: -9%;
     bottom: -20%;
     animation: rotate-reverse-360 10s linear infinite;
   }
-  @include media(md){
+  @include media(md) {
     .home-about-img {
       img {
         transform: scale(1) translateY(0%) translateX(00%);
@@ -817,8 +823,8 @@
       }
     }
   }
-  @include media(xs){
-    .spinner{
+  @include media(xs) {
+    .spinner {
       display: none;
     }
   }
@@ -845,6 +851,8 @@
     width: fit-content;
     display: flex;
     overflow: hidden;
+    border-radius: 16px;
+    cursor: pointer;
     div {
       position: absolute;
       color: white;
@@ -858,6 +866,10 @@
     }
     img {
       width: 100%;
+      transition: 0.5s;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
   a:hover {
