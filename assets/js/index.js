@@ -4,7 +4,7 @@ function scrollHeader() {
     main_header.style.position = "fixed";
     main_header.style.top = "0";
     main_header.style.background = "white";
-  }else{
+  } else {
     main_header.style.position = "static";
     main_header.style.background = "transparent";
   }
@@ -103,3 +103,17 @@ function changeActive(list, tabMenus) {
   list.classList.add("active");
 }
 export default changeActive;
+
+let watch_btn = document.querySelector(".watch-btn");
+let watch_modal = document.querySelector(".watch-modal");
+let watch = document.querySelector(".watch");
+let underlay = document.querySelector(".underlay");
+
+watch_btn.addEventListener("click", () => {
+  watch_modal.style.display = "block";
+  watch.style.zIndex="100";
+});
+underlay.addEventListener("click", () => {
+  watch_modal.style.display = "none";
+  watch.style.zIndex="90";
+});
