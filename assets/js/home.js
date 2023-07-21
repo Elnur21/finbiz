@@ -44,13 +44,13 @@ fetch("http://localhost:3000/together")
     together.innerHTML += text;
   });
 
-  let latest = document.querySelector(".latest .body");
-  fetch("http://localhost:3000/latest")
-    .then((res) => res.json())
-    .then((data) => {
-      let text = "";
-      data.forEach((t) => {
-        text += `
+let latest = document.querySelector(".latest .body");
+fetch("http://localhost:3000/latest")
+  .then((res) => res.json())
+  .then((data) => {
+    let text = "";
+    data.forEach((t) => {
+      text += `
         <article>
             <div class="card-head">
               <img src="/assets/images/${t.img}" alt="" />
@@ -72,6 +72,20 @@ fetch("http://localhost:3000/together")
             </div>
           </article>
           `;
-      });
-      latest.innerHTML += text;
     });
+    latest.innerHTML += text;
+  });
+
+let watch_btn = document.querySelector(".watch-btn");
+let watch_modal = document.querySelector(".watch-modal");
+let watch = document.querySelector(".watch");
+let underlay = document.querySelector(".underlay");
+
+watch_btn.addEventListener("click", () => {
+  watch_modal.style.display = "block";
+  watch.style.zIndex = "100";
+});
+underlay.addEventListener("click", () => {
+  watch_modal.style.display = "none";
+  watch.style.zIndex = "90";
+});

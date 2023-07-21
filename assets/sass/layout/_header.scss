@@ -45,9 +45,33 @@ header {
       }
     }
   }
-  .fa-chart-simple{
-    transform: rotateZ(90deg) scale(2) scaleY(.6) scaleX(.5);
+  .icon-btn-light{
+    background-color: $grey-100;
+    &:hover .fa-bars{
+      color: white;
+    }
+    &:hover .fa-bars::after{
+      border-top: 5px solid $red-400;
+      border-bottom: 5px solid $red-400;
+    }
+  }
+  .fa-bars{
     font-size: 20px;
+    position: relative;
+    color: black;
+    
+    &::after{
+      content:"";
+      position: absolute;
+      height: 33%;
+      width: 50%;
+      top: 5%;
+      right: -1px;
+      background-color: transparent;
+      border-top: 5px solid  $grey-100;
+      border-bottom: 5px solid  $grey-100;
+      transition: 0.5s;
+    }
   }
   @include media(lg) {
     .top {

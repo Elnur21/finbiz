@@ -4,7 +4,7 @@ function scrollHeader() {
     main_header.style.position = "fixed";
     main_header.style.top = "0";
     main_header.style.background = "white";
-  }else{
+  } else {
     main_header.style.position = "static";
     main_header.style.background = "transparent";
   }
