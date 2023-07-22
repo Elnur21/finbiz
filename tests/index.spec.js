@@ -1,3 +1,8 @@
+const { JSDOM } = require("jsdom");
+
+const dom = new JSDOM();
+const document = dom.window.document;
+
 document.body.innerHTML = `
   <button id="scroll">Scroll To Top</button>
   <div class="btns-header">
@@ -11,9 +16,8 @@ const {
   showScrollToTopButton,
   updateScrollProgress,
   close,
-} = require("../assets/js/index");
+} = require("../assets/js/index.js");
 const scrollToMock = jest.fn();
-
 
 document.querySelector = jest.fn((selector) => {
   switch (selector) {

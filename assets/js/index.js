@@ -102,4 +102,4 @@ function changeActive(list, tabMenus) {
   }
   list.classList.add("active");
 }
-export default changeActive;
+// export default changeActive;
