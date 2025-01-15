@@ -4,9 +4,11 @@ function scrollHeader() {
     main_header.style.position = "fixed";
     main_header.style.top = "0";
     main_header.style.background = "white";
+    main_header.style.boxShadow = "0px 2px 20px rgb(202, 202, 202)"
   } else {
     main_header.style.position = "static";
     main_header.style.background = "transparent";
+    main_header.style.boxShadow = "none"
   }
 }
 window.addEventListener("scroll", function () {
