@@ -38,7 +38,9 @@
       <div class="container main-header">
         <!-- Navigation -->
         <div class="logo">
-          <img src="/assets/images/logo-1.svg" alt="" />
+          <a href="index.html"
+            ><img src="/assets/images/logo-1.svg" alt=""
+          /></a>
         </div>
         <nav>
           <ul>
@@ -50,34 +52,46 @@
         <div class="btns-header">
           <a href="#" class="red-btn get-quote">Get Quote</a>
           <a href="#" class="icon-btn-light">
-            <i class="fa-solid fa-chart-simple"></i>
+            <div class="fa-solid fa-bars"></div>
           </a>
         </div>
       </div>
-      <div class="left-sidebar"></div>
+      <div class="left-sidebar"><div id="cursor"></div></div>
       <div class="sidebar">
         <button class="close red-btn"><i class="fa fa-close"></i></button>
         <div class="sidebar-logo">
-          <img src="/assets/images/logo-1.svg" alt="">
+          <a href="index.html"
+            ><img src="/assets/images/logo-1.svg" alt=""
+          /></a>
         </div>
         <div class="body-1">
           <p>
-            We must explain to you how all seds this mistakens idea denouncing pleasures and praising account.
+            We must explain to you how all seds this mistakens idea denouncing
+            pleasures and praising account.
           </p>
           <h4>Get In Touch</h4>
           <ul class="contacts">
-            <li><a href="tel:+8801234566789">
-              <i class="fa fa-phone text-red"></i> +8801234566789
-            </a></li>
-            <li><a href="mailto:elnur2370@gmail.com">
-              <i class="fa-solid fa-envelope text-red"></i> elnur2370@gmail.com
-            </a></li>
-            <li><a href="#">
-              <i class="fa-solid fa-globe text-red"></i> www.elnur.com
-            </a></li>
-            <li><a href="#">
-              <i class="fa-solid fa-location-dot text-red"></i> Hirdalan
-            </a></li>
+            <li>
+              <a href="tel:+8801234566789">
+                <i class="fa fa-phone text-red"></i> +8801234566789
+              </a>
+            </li>
+            <li>
+              <a href="mailto:elnur2370@gmail.com">
+                <i class="fa-solid fa-envelope text-red"></i>
+                elnur2370@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-globe text-red"></i> www.elnur.com
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-location-dot text-red"></i> Hirdalan
+              </a>
+            </li>
           </ul>
         </div>
         <div class="body-2">
@@ -98,6 +112,13 @@
         <a href="#" class="red-btn get-quote">Get Quote</a>
       </div>
     </header>
+    <div class="loading">
+      <div id="left"></div>
+      <div id="right"></div>
+      <div class="circle">
+        <div></div>
+      </div>
+    </div>
     <section class="banner">
       <div class="container">
         <h1>
@@ -364,9 +385,21 @@
           <img src="/assets/images/bg-video.jpg" alt="" />
         </div>
         <div class="watch">
-          <a href="#" class="watch-btn icon-btn-light"
-            ><i class="fa-solid fa-play"></i
-          ></a>
+          <button class="watch-btn icon-btn-light">
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <div class="watch-modal">
+            <div class="underlay"></div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/5ww1ydJRx1s"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
         <h2>Watch Video Here</h2>
       </section>
@@ -384,60 +417,7 @@
             </p>
             <h2>Finbiz Professionals</h2>
           </div>
-          <div class="body">
-            <article>
-              <div class="icons">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              </div>
-              <figure><img src="/assets/images/team-member1.png" /></figure>
-              <div class="content">
-                <h3>Andreas Menor</h3>
-                <p>Sr. Manager</p>
-              </div>
-            </article>
-            <article>
-              <div class="icons">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              </div>
-              <figure><img src="/assets/images/team-member2.png" /></figure>
-              <div class="content">
-                <h3>Andreas Menor</h3>
-                <p>Sr. Manager</p>
-              </div>
-            </article>
-            <article>
-              <div class="icons">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              </div>
-              <figure><img src="/assets/images/team-member3.png" /></figure>
-              <div class="content">
-                <h3>Andreas Menor</h3>
-                <p>Sr. Manager</p>
-              </div>
-            </article>
-            <article>
-              <div class="icons">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              </div>
-              <figure><img src="/assets/images/team-member4.png" /></figure>
-              <div class="content">
-                <h3>Andreas Menor</h3>
-                <p>Sr. Manager</p>
-              </div>
-            </article>
-          </div>
+          <div class="body"></div>
         </div>
       </section>
       <section class="business-progress-2">
@@ -449,65 +429,12 @@
             <h2>Together we can envision your business</h2>
           </div>
           <div class="tabs">
-            <span>All</span><span>Financial</span><span>Human</span>
+            <a class="active" href="#All" data-id="All">All</a>
+            <a href="#Financial" data-id="Financial">Financial</a>
+            <a href="#Human" data-id="Human">Human</a>
           </div>
         </div>
-        <div class="body container">
-          <article>
-            <a href="index.html">
-              <img src="/assets/images/businnes1.jpg" alt="" />
-              <div class="content">
-                <h5><a href="#">Business Growth</a></h5>
-                <p>Business Strategy</p>
-              </div>
-            </a>
-          </article>
-          <article>
-            <a href="index.html">
-              <img src="/assets/images/businnes2.jpg" alt="" />
-              <div class="content">
-                <h5><a href="#">Business Growth</a></h5>
-                <p>Business Strategy</p>
-              </div>
-            </a>
-          </article>
-          <article>
-            <a href="index.html">
-              <img src="/assets/images/businnes3.jpg" alt="" />
-              <div class="content">
-                <h5><a href="#">Business Growth</a></h5>
-                <p>Business Strategy</p>
-              </div>
-            </a>
-          </article>
-          <article>
-            <a href="index.html">
-              <img src="/assets/images/businnes4.jpg" alt="" />
-              <div class="content">
-                <h5><a href="#">Business Growth</a></h5>
-                <p>Business Strategy</p>
-              </div>
-            </a>
-          </article>
-          <article>
-            <a href="index.html">
-              <img src="/assets/images/businnes1.jpg" alt="" />
-              <div class="content">
-                <h5><a href="#">Business Growth</a></h5>
-                <p>Business Strategy</p>
-              </div>
-            </a>
-          </article>
-          <article>
-            <a href="index.html">
-              <img src="/assets/images/businnes2.jpg" alt="" />
-              <div class="content">
-                <h5><a href="#">Business Growth</a></h5>
-                <p>Business Strategy</p>
-              </div>
-            </a>
-          </article>
-        </div>
+        <div class="body container"></div>
       </section>
       <section class="talk">
         <div class="top container">
@@ -692,68 +619,7 @@
           </p>
           <h2>Latest Blog Posts</h2>
         </div>
-        <div class="body container">
-          <article>
-            <div class="card-head">
-              <img src="/assets/images/post1.png" alt="" />
-              <div class="date">25. 05. 2023</div>
-            </div>
-            <div class="card-body">
-              <p>
-                BUSINESS SOLUTION <span class="byUser">/ BY DAVID DOLEAN</span>
-              </p>
-              <h3>
-                <a href="#">The quick settle tips of the new ages exist</a>
-              </h3>
-              <a href="#" class="read-more">
-                <span class="icon-btn-red">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </span>
-                Read More
-              </a>
-            </div>
-          </article>
-          <article>
-            <div class="card-head">
-              <img src="/assets/images/post1.png" alt="" />
-              <div class="date">25. 05. 2023</div>
-            </div>
-            <div class="card-body">
-              <p>
-                BUSINESS SOLUTION <span class="byUser">/ BY DAVID DOLEAN</span>
-              </p>
-              <h3>
-                <a href="#">The quick settle tips of the new ages exist</a>
-              </h3>
-              <a href="#" class="read-more">
-                <span class="icon-btn-red">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </span>
-                Read More
-              </a>
-            </div>
-          </article>
-          <article>
-            <div class="card-head">
-              <img src="/assets/images/post1.png" alt="" />
-              <div class="date">25. 05. 2023</div>
-            </div>
-            <div class="card-body">
-              <p>
-                BUSINESS SOLUTION <span class="byUser">/ BY DAVID DOLEAN</span>
-              </p>
-              <h3>
-                <a href="#">The quick settle tips of the new ages exist</a>
-              </h3>
-              <a href="#" class="read-more">
-                <span class="icon-btn-red">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </span>
-                Read More
-              </a>
-            </div>
-          </article>
-        </div>
+        <div class="body container"></div>
       </section>
     </main>
     <footer>
@@ -891,6 +757,7 @@
     <script src="/assets/js/swiper.js"></script>
 
     <!-- Custom JS-->
-    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/index.js" type="module"></script>
+    <script src="/assets/js/home.js"></script>
   </body>
 </html>

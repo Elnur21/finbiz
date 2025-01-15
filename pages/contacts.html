@@ -33,7 +33,9 @@
       <div class="container main-header">
         <!-- Navigation -->
         <div class="logo">
-          <img src="/assets/images/logo-1.svg" alt="" />
+          <a href="index.html"
+            ><img src="/assets/images/logo-1.svg" alt=""
+          /></a>
         </div>
         <nav>
           <ul>
@@ -45,34 +47,48 @@
         <div class="btns-header">
           <a href="#" class="red-btn get-quote">Get Quote</a>
           <a href="#" class="icon-btn-light">
-            <i class="fa-solid fa-chart-simple"></i>
+            <div class="fa-solid fa-bars"></div>
           </a>
         </div>
       </div>
-      <div class="left-sidebar"></div>
+      <div class="left-sidebar">
+        <div id="cursor"></div>
+      </div>
       <div class="sidebar">
         <button class="close red-btn"><i class="fa fa-close"></i></button>
         <div class="sidebar-logo">
-          <img src="/assets/images/logo-1.svg" alt="">
+          <a href="index.html"
+            ><img src="/assets/images/logo-1.svg" alt=""
+          /></a>
         </div>
         <div class="body-1">
           <p>
-            We must explain to you how all seds this mistakens idea denouncing pleasures and praising account.
+            We must explain to you how all seds this mistakens idea denouncing
+            pleasures and praising account.
           </p>
           <h4>Get In Touch</h4>
           <ul class="contacts">
-            <li><a href="tel:+8801234566789">
-              <i class="fa fa-phone text-red"></i> +8801234566789
-            </a></li>
-            <li><a href="mailto:elnur2370@gmail.com">
-              <i class="fa-solid fa-envelope text-red"></i> elnur2370@gmail.com
-            </a></li>
-            <li><a href="#">
-              <i class="fa-solid fa-globe text-red"></i> www.elnur.com
-            </a></li>
-            <li><a href="#">
-              <i class="fa-solid fa-location-dot text-red"></i> Hirdalan
-            </a></li>
+            <li>
+              <a href="tel:+8801234566789">
+                <i class="fa fa-phone text-red"></i> +8801234566789
+              </a>
+            </li>
+            <li>
+              <a href="mailto:elnur2370@gmail.com">
+                <i class="fa-solid fa-envelope text-red"></i>
+                elnur2370@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-globe text-red"></i> www.elnur.com
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-location-dot text-red"></i> Hirdalan
+              </a>
+            </li>
           </ul>
         </div>
         <div class="body-2">
@@ -93,6 +109,13 @@
         <a href="#" class="red-btn get-quote">Get Quote</a>
       </div>
     </header>
+    <div class="loading">
+      <div id="left"></div>
+      <div id="right"></div>
+      <div class="circle">
+        <div></div>
+      </div>
+    </div>
     <section class="directory">
       <div>
         <img src="/assets/images/bg-contact-blog.jpg" alt="" />
@@ -101,7 +124,7 @@
         <h2>Contact Us</h2>
         <div>
           <a href="index.html">Home</a> <span class="text-red">/</span>
-          <a href="contacts.html">Contact us</a>
+          <a href="contacts.html"><strong>Contact us</strong></a>
         </div>
       </div>
     </section>
@@ -286,26 +309,38 @@
             <div class="articles">
               <article>
                 <div class="img">
-                  <img src="/assets/images/footer-1.png" alt="">
+                  <img src="/assets/images/footer-1.png" alt="" />
                 </div>
                 <div class="content">
                   <p class="date">
-                    <i class="fa-regular fa-clock"></i>  15th April, 2022
+                    <i class="fa-regular fa-clock"></i> 15th April, 2022
                   </p>
-                  <a href="#" class="title">Best Business Ideas For Getting Solution</a> <br>
-                  <a href="#" class="read-more"><span>Read More</span>  <i class="fa-solid fa-arrow-right"></i></a>
+                  <a href="#" class="title"
+                    >Best Business Ideas For Getting Solution</a
+                  >
+                  <br />
+                  <a href="#" class="read-more"
+                    ><span>Read More</span>
+                    <i class="fa-solid fa-arrow-right"></i
+                  ></a>
                 </div>
               </article>
               <article>
                 <div class="img">
-                  <img src="/assets/images/footer-2.png" alt="">
+                  <img src="/assets/images/footer-2.png" alt="" />
                 </div>
                 <div class="content">
                   <p class="date">
-                    <i class="fa-regular fa-clock"></i>  15th April, 2022
+                    <i class="fa-regular fa-clock"></i> 15th April, 2022
                   </p>
-                  <a href="#" class="title">Best Business Ideas For Getting Solution</a> <br>
-                  <a href="#" class="read-more"><span>Read More</span>  <i class="fa-solid fa-arrow-right"></i></a>
+                  <a href="#" class="title"
+                    >Best Business Ideas For Getting Solution</a
+                  >
+                  <br />
+                  <a href="#" class="read-more"
+                    ><span>Read More</span>
+                    <i class="fa-solid fa-arrow-right"></i
+                  ></a>
                 </div>
               </article>
             </div>
@@ -314,6 +349,6 @@
       </div>
       <div class="copyright">FINBIZ - Copyright 2022. All rights reserved.</div>
     </footer>
-    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/index.js" type="module"></script>
   </body>
 </html>

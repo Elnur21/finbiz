@@ -1,4 +1,7 @@
 .directory {
+  strong{
+    color: black;
+  }
   transform: translateY(18%);
   position: relative;
   .container {
@@ -28,6 +31,21 @@
     font-family: $dm-sans;
     font-weight: $w-bolder;
     color: $grey-666;
+  }
+  @include media(md){
+    h2{
+      font-size: 40px;
+    }
+  }
+  @include media(sm){
+    h2{
+      font-size: 30px;
+    }
+    .container{
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
   }
 }
 .contacts {
@@ -159,7 +177,7 @@
     width: 49%;
   }
   #subject,
-  #text {
+  #text,#textArea {
     width: 100%;
   }
   input:focus,
