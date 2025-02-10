@@ -16,7 +16,7 @@
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "jsdom": "^26.0.0",
-    "sass": "^1.83.4"
+    "sass": "^1.84.0"
   },
   "jest": {
     "testEnvironment": "node"
